@@ -186,3 +186,39 @@ height: 12.5rem;
 #footer{
     grid-area: footer;
 }
+/* responsive */
+@media screen and (max-width:768px){
+    #main .main-content-1 .main-content-articles{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #main .main-content-3 .main-content-articles{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 13.8rem;
+    }
+    #main .main-content-3 .main-content-article-card-images{
+        width: 13.8rem;
+    }
+}
+@media screen and (max-width:500px) {
+    #navbar{
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar .navbar-brand{
+        margin:0 0 1rem 0;
+    }
+    #main .main-content-1 .main-content-articles{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #main .main-content-3 .main-content-articles{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 18.8rem;
+    }
+    #main .main-content-3 .main-content-article-card-images{
+    width: 18.8rem;
+    }
+}
